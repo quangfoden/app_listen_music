@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-image: url(../images/bg-body6.jpg);
+    background-position: center center;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-style: italic;
+    word-spacing: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.start {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#start {
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    margin: 0 auto;
+    padding: 10px 10px;
+    background: #33050591;
+    border-radius: 10px;
+    color: pink;
+
+
+
+}
+
+h1 span {
+    font-size: 5vw;
+}
+
+h1 span:nth-child(1) {
+    color: blueviolet;
+}
+
+h1 span:nth-child(2) {
+    color: yellowgreen;
+}
+
+h1 span:nth-child(3) {
+    color: blue;
+}
+
+h1 span:nth-child(4) {
+    color: green;
+}
+
+h1 span:nth-child(5) {
+    color: aqua;
+}
+
+
+
+h1 {
+    animation: myAnimation 1s ease-in-out infinite;
+}
+
+@keyframes myAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  
+}

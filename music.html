@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <title>Listening Music</title>
+    <!-- link font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,900&display=swap" rel="stylesheet">
+
+    <!-- link icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- link main css  -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <i id="enter-fullscreen-button" title="toàn màn hình" class="fas fa-expand"></i>
+    <i id="exit-fullscreen-button" title="thoát toàn màn hình" class="fas fa-expand"></i>
+    <button class="theme">Đổi giao diện
+        <div class="theme1">Giao diện 1</div>
+        <div class="theme2">Giao diện 2</div>
+        <div class="theme3">Giao diện 3</div>
+        <div class="theme4">Giao diện 4</div>
+    </button>
+
+    <div class="list-music" title="list danh sách nhạc">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-close"></i>
+
+        <ul class="list">
+            <li class="laanh">Là anh - Phạm Lịch</li>
+            <li class="wayting">Wayting For You - Mono</li>
+            <li class="battinhyeulen">Bật tình yêu lên - Hoà Minzy</li>
+            <li class="muonnoivoiem">Muốn nói với em - TTeam</li>
+            <li class="cogaivotchong">Cô gái vót chông - ...</li>
+            <li class="cogaimoduong">Cô gái mở đường - ...</li>
+            <li class="chieckhanphieu">Chiếc khăn phiêu - ...</li>
+        </ul>
+    </div>
+    <audio src="" id="audio"></audio>
+    <div class="container">
+        <h1 style="white-space: nowrap; " class="music-name"></h1>
+        <div style="white-space: nowrap;" class="artist-name"></div>
+        <div class="disk"></div>
+        <div class="song-slider">
+            <input type="range" value="0" class="seek-bar">
+            <span style="font-size: 0.8rem;" class="current-time">00:00</span>
+            <span style="font-size: 0.8rem;" class="song-duration">00:00</span>
+        </div>
+        <div class="controls">
+            <button class="btn-backward fas fa-backward"></button>
+            <button class="play-btn pause">
+                <span></span>
+                <span></span>
+            </button>
+            <button class="btn-forward fas fa-forward"></button>
+        </div>
+
+    </div>
+
+
+    <script src="js/data_music.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
