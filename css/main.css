@@ -5,17 +5,41 @@
 }
 
 body {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    background-image: url(../images/bg-body4.jpg);
+    /* background-image: url(../images/bg-body4.jpg); */
+    /* background-attachment: fixed; */
+    background: #FFFFCC;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     font-family: 'Roboto', sans-serif;
-    position: relative;
 }
 
+h3 {
+    padding: 10px 0;
+}
+
+.test {
+    position: absolute;
+    z-index: -10000;
+    width: 100vw;
+    height: 100vh;
+    /* border: 10px solid #333; */
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: -120%;
+    width: 100vw;
+    height: max-content;
+}
+
+
 .list-music {
+    max-height: 500px;
+    overflow: auto;
     position: absolute;
     z-index: 10;
     width: max-content;
@@ -27,6 +51,15 @@ body {
     border-radius: 10px;
     font-size: 1.5rem;
 }
+
+.list-music::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* .list-music::-webkit-scrollbar-thumb{
+    color: #FF33CC;
+    width: 20px;
+} */
 
 .theme {
     position: absolute;
@@ -69,6 +102,7 @@ body {
 .fa-close {
     display: none;
     cursor: pointer;
+
 }
 
 .fa-bars {
@@ -118,7 +152,6 @@ i#enter-fullscreen-button {
     overflow: hidden;
     color: black;
     font-weight: 500;
-
 }
 
 .music-name,
@@ -128,14 +161,14 @@ i#enter-fullscreen-button {
 }
 
 .music-name {
-    color: rgba(25, 0, 255, 0.719);
+    color: #FF33CC;
     font-size: 4vw;
     font-weight: 500;
     margin-bottom: 10px;
 }
 
 .artist-name {
-    color: rgba(25, 0, 255, 0.719);
+    color: #FF33CC;
     font-size: 2vw;
 
 }
@@ -298,8 +331,17 @@ i#enter-fullscreen-button {
 }
 
 /* ============MEDIA ================ */
+@media (max-width: 1000px) {
+    video {
+        top: -90%;
+    }
+}
 
-@media (max-width: 600px) {
+@media (max-width: 670px) {
+    .container {
+        width: 80%;
+    }
+
     .controls {
         width: 100%;
     }
@@ -314,7 +356,13 @@ i#enter-fullscreen-button {
     }
 
     .music-name {
-        font-size: 5vw;
+        font-size: 6.5vw;
+        font-weight: bold;
+    }
+
+    .artist-name {
+        font-size: 3vw;
+        font-weight: bold;
     }
 
     button.play-btn {
@@ -348,5 +396,34 @@ i#enter-fullscreen-button {
     .theme {
         font-size: 1rem;
 
+    }
+
+    .btn-backward,
+    .btn-forward {
+        opacity: initial;
+    }
+
+    video {
+        top: -50%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    video {
+        top: -10%;
+    }
+}
+
+@media (max-width: 414px) {
+    video {
+        top: 5%;
+    }
+}
+
+@media (max-width: 375px) {
+    video {
+        top: 0;
+        height: 100vh;
     }
 }

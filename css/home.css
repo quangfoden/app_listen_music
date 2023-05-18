@@ -2,14 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  
+    
 }
 
 body {
-
-    background-image: url(../images/bg-body6.jpg);
+    background: #ccc;
+    background-image: url();
     background-position: center center;
     position: relative;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 h1 {
@@ -26,6 +29,7 @@ a {
     width: 100vw;
     height: 100vh;
 }
+
 
 #start {
     padding: 10px;
@@ -82,5 +86,5 @@ h1 {
         opacity: 1;
         transform: translateY(0);
     }
-  
+
 }
