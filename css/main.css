@@ -32,8 +32,8 @@ h3 {
 video {
     position: absolute;
     top: -120%;
-    width: 100vw;
-    height: max-content;
+    
+
 }
 
 
@@ -331,13 +331,27 @@ i#enter-fullscreen-button {
 }
 
 /* ============MEDIA ================ */
-@media (max-width: 1000px) {
+@media (min-width: 1024px) {
     video {
-        top: -90%;
+        top: -120%;
+        width: inherit;
     }
 }
 
-@media (max-width: 670px) {
+@media (max-width: 1000px) {
+    video {
+        top: -80%;
+    }
+}
+
+@media (max-width: 790px) {
+    video {
+        top: -100%;
+        left: -40%;
+    }
+}
+
+@media (max-width: 679px) {
     .container {
         width: 80%;
     }
@@ -404,26 +418,73 @@ i#enter-fullscreen-button {
     }
 
     video {
-        top: -50%;
+        top: -110%;
+        left: -40%;
     }
 
 }
 
 @media (max-width: 500px) {
     video {
-        top: -10%;
+        /* top: a-10%uto; */
+        /* width: inherit; */
+        left: -80%;
+        /* height: inherit; */
+    }
+
+    body {
+        background: #000;
+    }
+
+    .container {
+        bottom: 10%;
+    }
+
+    i#enter-fullscreen-button,
+    i#exit-fullscreen-button {
+        top: 10%;
+    }
+
+    .list-music,
+    .theme {
+        top: 10%;
+        max-width: fit-content;
     }
 }
 
 @media (max-width: 414px) {
-    video {
-        top: 5%;
-    }
+    /* video {
+        top: 0;
+
+    } */
 }
 
 @media (max-width: 375px) {
+    body {
+        background: #000;
+    }
+
+    .container {
+        bottom: 10%;
+    }
+
+    i#enter-fullscreen-button,
+    i#exit-fullscreen-button {
+        top: 13%;
+        font-size: 0.5rem;
+    }
+
+    .list-music,
+    .theme {
+        top: 13%;
+        font-size: 0.5rem;
+        max-width: fit-content;
+    }
+
     video {
-        top: 0;
-        height: 100vh;
+        /* top: 0; */
+        /* height: inherit; */
+        left: -120%;
+
     }
 }
